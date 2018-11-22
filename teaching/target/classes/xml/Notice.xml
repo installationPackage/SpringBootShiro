@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.bdqn.dao.NoticeDao">
+    <!--添加通知-->
+    <insert id="addNotice">
+        insert into notice
+        value (default,#{userId},#{content},#{contentDate})
+    </insert>
+    <!--Map-->
+    <resultMap id="noticeMap" type="Notice">
+        <result column="id" property="id"/>
+        <result column="userId" property="userId"/>
+        <result column="content" property="content"/>
+        <result column="contentDate" property="contentDate"/>
+        <association property="user" javaType="User">
+            <result column="uid" property="id"/>
+            <result column="userCode" property="userCode"/>
+        </association>
+    </resultMap>
+    <!--查询通知-->
+    <select id="queryNotice" resultMap="noticeMap">
+        select n.*,u.id uid,u.userCode
+        from notice n,user u
+        where n.userId=u.id
+        <if test="contentDate!=null and contentDate!=''">
+            and n.contentDate=#{contentDate}
+        </if>
+    </select>
+</mapper>

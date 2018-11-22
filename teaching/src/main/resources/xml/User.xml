@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.bdqn.dao.UserDao">
+    <!--登录-->
+     <select id="login" resultType="User">
+         select * from user
+         where userCode=#{userCode} and password=#{password}
+         <if test="id != null and id>0">
+             and id=#{id}
+         </if>
+     </select>
+    <!--userMap-->
+    <resultMap id="userMap" type="User">
+        <result property="id" column="id"/>
+        <result property="userCode" column="userCode"/>
+        <result property="userName" column="userName"/>
+        <result property="sex" column="sex"/>
+        <result property="classesId" column="classesId"/>
+        <result property="type" column="type"/>
+        <result property="phone" column="phone"/>
+        <result property="email" column="email"/>
+        <result property="address" column="address"/>
+       <association property="classes" javaType="Classes">
+           <result property="id" column="cid"/>
+           <result property="classesName" column="classesName"/>
+       </association>
+    </resultMap>
+    <!--用户sql语句-->
+    <sql id="userSql">
+        <if test="user.userName!=null and user.userName!= ''">
+            and u.name like concat('%',#{user.userName},'%')
+        </if>
+        <if test="user.classesId!=null and user.classesId>0">
+            and u.classesId=#{user.classesId}
+        </if>
+        <if test="user.type!=null and user.type>0">
+            and u.type=#{user.type}
+        </if>
+    </sql>
+    <!--查询所有用户-->
+    <select id="queryUser" resultMap="userMap">
+        select u.*,c.id cid,classesName
+        from user u,classes c
+        where u.classesId = c.id
+        <include refid="userSql"/>
+        limit #{pageNo},#{pageSize}
+    </select>
+    <!--查询用户总记录数-->
+    <select id="countUser" resultType="_int">
+        select count(*) from user u
+        where 1=1
+        <include refid="userSql"/>
+
+    </select>
+    <!--修改-->
+    <update id="updateUser">
+        update user
+        <set>
+            <if test="userName!=null">
+                userName=#{userName},
+            </if>
+            <if test="password!=null">
+                password=#{password},
+            </if>
+            <if test="userCode!=null">
+                name=#{userCode},
+            </if>
+            <if test="sex!=null">
+                sex=#{sex},
+            </if>
+            <if test="classesId!=null">
+                classesId=#{classesId},
+            </if>
+            <if test="type!=null">
+                type=#{type},
+            </if>
+            <if test="phone!=null">
+            phone=#{phone},
+            </if>
+            <if test="email!=null">
+                email=#{email},
+            </if>
+            <if test="address!=null">
+                address=#{address},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+    <!--删除-->
+    <delete id="deleteUser">
+        delete from user
+        where id=#{id}
+    </delete>
+    <!--增加-->
+    <insert id="addUser">
+        insert into user
+        value(default,#{userCode},#{password},#{userName},#{sex},#{classesId},#{type},#{phone},#{email},#{address})
+    </insert>
+    <!--查询token是否和数据库相同-->
+    <select id="verifyToken" resultType="User">
+        select * from user
+        where token = #{token}
+    </select>
+    <!--储存token-->
+    <update id="saveToken">
+        update user set token=#{token}
+        where id = #{id}
+    </update>
+</mapper>

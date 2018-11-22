@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.bdqn.dao.CourseDao">
+    <!--查询课程类型-->
+    <select id="queryCourse" resultType="Course">
+        select * from course
+    </select>
+    <!--增加课程类型-->
+    <insert id="addCourse">
+        insert into course
+        value (default,#{courseName})
+    </insert>
+    <!--删除课程类型-->
+    <delete id="deleteCourse">
+        delete from course
+        where id =#{id}
+    </delete>
+    <!--修改课程类型-->
+    <update id="updateCourse">
+        update course set courseName = #{courseName} where id = #{id};
+    </update>
+</mapper>

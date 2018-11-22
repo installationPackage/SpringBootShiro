@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context-4.2.xsd
+        http://www.springframework.org/schema/aop
+       http://www.springframework.org/schema/aop/spring-aop-4.2.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+
+    <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
+    <context:component-scan base-package="com.ssm.bdqn"/>
+
+    <!--引入properties文件-->
+    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location">
+            <value>classpath:database.properties</value>
+        </property>
+    </bean>
+    <!--连接数据库-->
+    <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
+        <property name="url" value="${url}" />
+        <property name="driverClassName" value="${driver}" />
+        <property name="username" value="${user}" />
+        <property name="password" value="${pwd}" />
+    </bean>
+
+    <!--获取会话-->
+    <bean name="sessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
+    p:typeAliasesPackage="com.ssm.bdqn.entity">
+        <property name="dataSource" ref="dataSource" />
+        <property name="mapperLocations" value="classpath:xml/*.xml" />
+        <!--打印sql语句-->
+        <property name="configLocation" value="classpath:Mybatis.xml" />
+    </bean>
+    <!--获取dao-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="sqlSessionFactoryBeanName" value="sessionFactory" />
+        <property name="basePackage" value="com.ssm.bdqn.dao" />
+    </bean>
+    <!--声明式事务-->
+    <bean name="transactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="add*" propagation="REQUIRED"/>
+            <tx:method name="update*" />
+            <tx:method name="delete*" />
+            <tx:method name="query*" propagation="NOT_SUPPORTED" />
+        </tx:attributes>
+    </tx:advice>
+    <!--面向切面-->
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(* com.ssm.bdqn.service..*.*(..))" />
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="pointcut" />
+    </aop:config>
+
+
+    <!-- 扩充了注解驱动，可以将请求参数绑定到控制器参数 -->
+    <mvc:annotation-driven>
+    <!--自定义消息转换器的编码,解决后台传输json回前台时，中文乱码问题-->
+        <mvc:message-converters register-defaults="true">
+            <bean class="org.springframework.http.converter.StringHttpMessageConverter" >
+                <property name = "supportedMediaTypes">
+                    <list>
+                        <value>application/json;charset=utf-8</value>
+                        <value>text/html;charset=utf-8</value>
+                        <!-- application 可以在任意 form 表单里面 enctype 属性默认找到 -->
+                        <value>application/x-www-form-urlencoded</value>
+                    </list>
+                </property>
+            </bean>
+            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" ></bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+    <!-- 放过静态资源处理  css js imgs -->
+    <mvc:resources mapping="/css/**" location="static/css/"/>
+    <mvc:resources mapping="/js/**" location="static/js/"/>
+    <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
+    <bean id="mappingJacksonHttpMessageConverter"
+          class="org.springframework.http.converter.StringHttpMessageConverter">
+        <property name="supportedMediaTypes">
+            <list>
+                <value>text/html;charset=UTF-8</value>
+            </list>
+        </property>
+    </bean>
+    <!-- 启动SpringMVC的注解功能，完成请求和注解POJO的映射 -->
+    <bean
+            class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+        <property name="messageConverters">
+            <list>
+                <ref bean="mappingJacksonHttpMessageConverter" /> <!-- JSON转换器 -->
+        </list>
+        </property>
+    </bean>
+
+    <!--&lt;!&ndash; 定义跳转的文件的前后缀 ，视图模式配置&ndash;&gt;
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    &lt;!&ndash; 这里的配置变成一个 可用的url地址 &ndash;&gt;
+    <property name="prefix" value="/WEB-INF/jsp/"/>
+    <property name="suffix" value=".jsp"/>
+    </bean>-->
+    <!-- 使用thymeleaf解析   Begin-->
+    <bean id="templateResolver"
+          class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
+        <property name="prefix" value="/WEB-INF/html/"/>
+        <property name="suffix" value=".html"/>
+        <property name="templateMode" value="HTML"/>
+        <property name="cacheable" value="false"/>
+        <!--解决中文乱码-->
+        <property name="characterEncoding" value="UTF-8" />
+    </bean>
+
+    <!--拦截器配置-->
+   <!-- <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <mvc:mapping path="/answer/*"/>
+            <mvc:exclude-mapping path="/user/login_check" />
+            <mvc:exclude-mapping path="/toLogin"/>
+            <bean class="com.ssm.bdqn.interceptor.TokenInterceptor" />
+        </mvc:interceptor>
+    </mvc:interceptors>-->
+
+    <!-- SpringMVC文件上传 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="utf-8"/>
+        <!-- 最大内存大小 -->
+        <!--defaultEncoding：请求的编码格式必须和用户JSP的编码一致，以便正确读取表单中的内容。
+           uploadTempDir:文件上传过程中的临时目录，上传完成后，临时文件会自动删除
+           maxUploadSize:设置文件上传大小上限（单位为字节） -->
+        <property name="maxInMemorySize" value="10240"/>
+        <!-- 最大文件大小，-1为不限制大小 -->
+        <property name="maxUploadSize" value="-1"/>
+        <!--uploadTempDir可以不做设置，有默认的路径，上传完毕会临时文件会自动被清理掉
+       <property name="uploadTempDir" value="upload/temp"></property> -->
+    </bean>
+
+    <!-- 接口跨域配置 -->
+    <mvc:cors>
+        <mvc:mapping path="/**"
+                     allowed-origins="*"
+                     allowed-methods="POST, GET, OPTIONS, DELETE, PUT"
+                     allowed-headers="Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
+                     allow-credentials="true" />
+    </mvc:cors>
+
+
+</beans>
