@@ -30,6 +30,7 @@ public class UserController {
              //生成一个token（用户名+用户密码+30分钟（60*1000sm*30））
              String token = JwtUtil.sign(user.getUserCode()+user.getPassword(),60L*1000L*30L);
              if(userService.saveToken(token,login.getId())>0){
+                 resp.setMessage("登录成功");
                 resp.setData(token);
              }
          }else {

@@ -125,7 +125,7 @@
     </bean>
 
     <!--拦截器配置-->
-   <!-- <mvc:interceptors>
+    <!--<mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
             <mvc:mapping path="/answer/*"/>
@@ -149,14 +149,6 @@
        <property name="uploadTempDir" value="upload/temp"></property> -->
     </bean>
 
-    <!-- 接口跨域配置 -->
-    <mvc:cors>
-        <mvc:mapping path="/**"
-                     allowed-origins="*"
-                     allowed-methods="POST, GET, OPTIONS, DELETE, PUT"
-                     allowed-headers="Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With"
-                     allow-credentials="true" />
-    </mvc:cors>
 
 
 </beans>

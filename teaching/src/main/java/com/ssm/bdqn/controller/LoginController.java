@@ -5,8 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class LoginController {
-    @RequestMapping("toLogin")
-    public static String toLogin(){
-        return "index";
+    @RequestMapping("/toLogin")
+   public String login2(){
+        return "teacher/succeed";
     }
+
 }
