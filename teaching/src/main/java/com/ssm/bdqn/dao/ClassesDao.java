@@ -1,9 +1,9 @@
 package com.ssm.bdqn.dao;
 
 import com.ssm.bdqn.entity.Classes;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 public interface ClassesDao {
     //查询班级
     List<Classes> queryClasses(Classes classes);

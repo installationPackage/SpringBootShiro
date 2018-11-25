@@ -4,13 +4,13 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.ssm.bdqn.dao.UserDao">
     <!--登录-->
-     <select id="login" resultType="User">
-         select * from user
-         where userCode=#{userCode} and password=#{password}
-         <if test="id != null and id>0">
-             and id=#{id}
-         </if>
-     </select>
+    <select id="login" resultType="User">
+        select * from user
+        where userCode=#{userCode} and password=#{password}
+        <if test="id != null and id>0">
+            and id=#{id}
+        </if>
+    </select>
     <!--userMap-->
     <resultMap id="userMap" type="User">
         <result property="id" column="id"/>
@@ -22,10 +22,10 @@
         <result property="phone" column="phone"/>
         <result property="email" column="email"/>
         <result property="address" column="address"/>
-       <association property="classes" javaType="Classes">
-           <result property="id" column="cid"/>
-           <result property="classesName" column="classesName"/>
-       </association>
+        <association property="classes" javaType="Classes">
+            <result property="id" column="cid"/>
+            <result property="classesName" column="classesName"/>
+        </association>
     </resultMap>
     <!--用户sql语句-->
     <sql id="userSql">
@@ -77,7 +77,7 @@
                 type=#{type},
             </if>
             <if test="phone!=null">
-            phone=#{phone},
+                phone=#{phone},
             </if>
             <if test="email!=null">
                 email=#{email},

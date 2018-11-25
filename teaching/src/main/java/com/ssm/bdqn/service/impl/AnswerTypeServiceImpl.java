@@ -4,8 +4,10 @@ import com.ssm.bdqn.dao.AnswerTypeDao;
 import com.ssm.bdqn.entity.AnswerType;
 import com.ssm.bdqn.service.AnswerTypeService;
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
 import java.util.List;
+
 @Service(value = "answerTypeService")
 public class AnswerTypeServiceImpl implements AnswerTypeService {
     @Resource

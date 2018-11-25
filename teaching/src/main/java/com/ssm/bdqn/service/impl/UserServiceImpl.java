@@ -1,10 +1,10 @@
 package com.ssm.bdqn.service.impl;
 
-import com.ssm.bdqn.Util.MD5;
 import com.ssm.bdqn.dao.UserDao;
 import com.ssm.bdqn.entity.Pager;
 import com.ssm.bdqn.entity.User;
 import com.ssm.bdqn.service.UserService;
+import com.ssm.bdqn.util.MD5;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

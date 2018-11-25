@@ -2,9 +2,9 @@ package com.ssm.bdqn.dao;
 
 import com.ssm.bdqn.entity.User;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
+
 public interface UserDao {
     //登录
     User login(User user);

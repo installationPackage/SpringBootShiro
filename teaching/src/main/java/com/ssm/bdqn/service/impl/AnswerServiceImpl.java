@@ -4,10 +4,12 @@ import com.ssm.bdqn.dao.AnswerDao;
 import com.ssm.bdqn.entity.Answer;
 import com.ssm.bdqn.service.AnswerService;
 import org.springframework.stereotype.Service;
+
 import javax.annotation.Resource;
 import java.util.List;
+
 @Service(value = "answerService")
-public class AnswerServiceImpl implements AnswerService  {
+public class AnswerServiceImpl implements AnswerService {
     @Resource()
     private AnswerDao addAnswer;
     //添加面试题

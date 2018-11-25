@@ -32,11 +32,11 @@
         </if>
     </sql>
     <!--查询面试题-->
-   <!-- select a.*,at.id asid,at.typeName,c.id cid,c.courseName
-    from answer a,answerType at,course c
-    where a.courseTypeId = c.id and a.answerTypeId=at.id-->
+    <!-- select a.*,at.id asid,at.typeName,c.id cid,c.courseName
+     from answer a,answerType at,course c
+     where a.courseTypeId = c.id and a.answerTypeId=at.id-->
     <select id="queryAnswer" resultType="Answer">
-       select * from answer
+        select * from answer
         where 1=1
         <include refid="answerSql"/>
     </select>

@@ -2,18 +2,17 @@ package com.ssm.bdqn.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.ssm.bdqn.Util.JwtUtil;
 import com.ssm.bdqn.entity.AnswerSheet;
 import com.ssm.bdqn.entity.Pager;
 import com.ssm.bdqn.service.AnswerSheetService;
 import com.ssm.bdqn.standard.Resp;
-import com.ssm.bdqn.standard.ResponseData;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.Date;
-import java.util.List;
 
 @RequestMapping(value = "answerSheet")
 @RestController

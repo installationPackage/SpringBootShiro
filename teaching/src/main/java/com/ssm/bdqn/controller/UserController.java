@@ -2,16 +2,17 @@ package com.ssm.bdqn.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import com.ssm.bdqn.Util.JwtUtil;
 import com.ssm.bdqn.entity.Pager;
 import com.ssm.bdqn.entity.User;
 import com.ssm.bdqn.service.UserService;
 import com.ssm.bdqn.standard.Resp;
-import com.ssm.bdqn.standard.ResponseData;
-import org.springframework.web.bind.annotation.*;
+import com.ssm.bdqn.util.JwtUtil;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
-import java.util.List;
 
 @RestController
 @RequestMapping(value = "/user")
@@ -19,37 +20,36 @@ public class UserController {
     @Resource(name = "userService")
     private UserService userService;
 
-      //登录
-      @RequestMapping(value = "/login_check")
-      public Object userLogin(User user){
-         //登录验证生成token
-         // 先的到数据库验证判断用户名和密码是否正确
-          User login = userService.login(user);
-          Resp<Object> resp = new Resp<Object>();
-          if(login!=null){
-             //生成一个token（用户名+用户密码+30分钟（60*1000sm*30））
-             String token = JwtUtil.sign(user.getUserCode()+user.getPassword(),60L*1000L*30L);
-             if(userService.saveToken(token,login.getId())>0){
-                 resp.setMessage("登录成功");
+    //登录
+    @RequestMapping(value = "/login_check")
+    public Object userLogin(User user){
+        //登录验证生成token
+        // 先的到数据库验证判断用户名和密码是否正确
+        User login = userService.login(user);
+        Resp<Object> resp = new Resp<Object>();
+        if(login!=null){
+            //生成一个token（用户名+用户密码+30分钟（60*1000sm*30））
+            String token = JwtUtil.sign(user.getUserCode()+user.getPassword(),60L*1000L*30L);
+            if(userService.saveToken(token,login.getId())>0){
                 resp.setData(token);
-             }
-         }else {
+            }
+        }else {
             resp.setStatus(105);
             resp.setMessage("登录失败");
-         }
-         return resp;
-      }
+        }
+        return resp;
+    }
 
-      //修改用户
-      @RequestMapping(value = "/updateUser")
-     public String updateUser(User user){
-          Resp<Object> resp = new Resp<Object>();
-          if(userService.updateUser(user)>0){
-              resp.getStatus();
-          }
-          return JSON.toJSONString(resp);
-      }
-      //增加用户
+    //修改用户
+    @RequestMapping(value = "/updateUser")
+    public String updateUser(User user){
+        Resp<Object> resp = new Resp<Object>();
+        if(userService.updateUser(user)>0){
+            resp.getStatus();
+        }
+        return JSON.toJSONString(resp);
+    }
+    //增加用户
     @RequestMapping(value = "/addUser")
     public String addUser(User user){
         Resp<Object> resp = new Resp<Object>();
@@ -84,7 +84,7 @@ public class UserController {
         if(userService.updatePassword(user)>0){
             resp.getStatus();
         }
-          return JSON.toJSONString(resp);
+        return JSON.toJSONString(resp);
     }
 
 }
