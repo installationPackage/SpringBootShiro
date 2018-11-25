@@ -88,6 +88,7 @@
     <!-- 放过静态资源处理  css js imgs -->
     <mvc:resources mapping="/css/**" location="static/css/"/>
     <mvc:resources mapping="/js/**" location="static/js/"/>
+    <mvc:resources mapping="/image/**" location="static/image/"/>
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter"
           class="org.springframework.http.converter.StringHttpMessageConverter">
@@ -107,12 +108,13 @@
         </property>
     </bean>
 
-    <!--&lt;!&ndash; 定义跳转的文件的前后缀 ，视图模式配置&ndash;&gt;
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <!-- 定义跳转的文件的前后缀 ，视图模式配置-->
+   <!-- <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     &lt;!&ndash; 这里的配置变成一个 可用的url地址 &ndash;&gt;
     <property name="prefix" value="/WEB-INF/jsp/"/>
     <property name="suffix" value=".jsp"/>
     </bean>-->
+
     <!-- 使用thymeleaf解析   Begin-->
     <bean id="templateResolver"
           class="org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver">
@@ -120,6 +122,15 @@
         <property name="suffix" value=".html"/>
         <property name="templateMode" value="HTML"/>
         <property name="cacheable" value="false"/>
+        <!--解决中文乱码-->
+        <property name="characterEncoding" value="UTF-8" />
+    </bean>
+    <bean id="templateEngine"
+          class="org.thymeleaf.spring4.SpringTemplateEngine">
+        <property name="templateResolver" ref="templateResolver"/>
+    </bean>
+    <bean class="org.thymeleaf.spring4.view.ThymeleafViewResolver">
+        <property name="templateEngine" ref="templateEngine"/>
         <!--解决中文乱码-->
         <property name="characterEncoding" value="UTF-8" />
     </bean>
