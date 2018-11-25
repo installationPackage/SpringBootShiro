@@ -1,246 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="teaching:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e021a66c-9292-4e0f-95fb-336c0dd05135" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ce91b98c-d926-428d-b670-e67907be4e24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/Util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/Util/JwtUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/Util/MD5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/Util/MD5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerSheetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerSheetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerTypeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerTypeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/ClassesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/ClassesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/LoginController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/NoticeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/NoticeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/ClassesDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/ClassesDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/AnswerSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/AnswerSheet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/AnswerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/AnswerType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Classes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Classes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Notice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Notice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/interceptor/TokenInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/interceptor/TokenInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/AnswerSheetService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/AnswerSheetService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/AnswerTypeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/AnswerTypeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/ClassesService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/ClassesService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/NoticeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/NoticeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/AnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/AnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/AnswerSheetServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/AnswerSheetServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/AnswerTypeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/AnswerTypeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/ClassesServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/ClassesServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/CourseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/CourseServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/NoticeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/NoticeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/standard/Resp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/standard/Resp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/standard/ResponseData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/standard/ResponseData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Mybatis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Mybatis.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml/Answer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml/Answer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml/User.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/succeed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/student/succeed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/teacher/succeed.html" beforeDir="false" />
+    <list default="true" id="e021a66c-9292-4e0f-95fb-336c0dd05135" name="Default Changelist" comment="2018-11-25">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/Particleground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/custom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/datatables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/datepicker/daterangepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/dropzone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/fastclick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/icheck.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery-1.12.4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/moment/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/nprogress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/pnotify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/validator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/verificationNumbers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/world.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/text/javaText.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/Mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/Util/JwtUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/Util/MD5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/AnswerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/AnswerSheetController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/AnswerTypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/ClassesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/CourseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/NoticeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/dao/AnswerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/dao/AnswerSheetDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/dao/AnswerTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/dao/ClassesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/dao/CourseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/dao/NoticeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/AnswerSheet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/AnswerType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/Classes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/Notice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/Pager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/interceptor/TokenInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/AnswerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/AnswerSheetService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/AnswerTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/ClassesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/CourseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/NoticeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/impl/AnswerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/impl/AnswerSheetServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/impl/AnswerTypeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/impl/ClassesServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/impl/CourseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/impl/NoticeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/standard/Resp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/standard/ResponseData$Meta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/standard/ResponseData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/xml/Answer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/xml/AnswerSheet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/xml/AnswerType.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/xml/Classes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/xml/Course.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/xml/Notice.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/classes/xml/User.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/html/admin/succeed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/html/student/succeed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/html/teacher/succeed.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.1.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/commons-lang3-3.3.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/cors-filter-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.47.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.8.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.8.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.8.8.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/java-jwt-2.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/java-property-utils-1.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.44.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/ognl-3.1.10.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.6.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.12.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-spring4-3.0.2.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/lib/unbescape-1.1.4.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/springmvc-servlet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/Particleground.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/custom.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/datatables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/datepicker/daterangepicker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/dropzone.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/fastclick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/icheck.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/jquery-1.12.4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/jquery.mCustomScrollbar.concat.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/moment/moment.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/nprogress.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/pnotify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/validator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/verificationNumbers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/bdqn-1.0-SNAPSHOT/static/js/world.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/Util/JwtUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/Util/MD5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/AnswerController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/AnswerSheetController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/AnswerTypeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/ClassesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/CourseController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/NoticeController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/dao/AnswerDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/dao/AnswerSheetDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/dao/AnswerTypeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/dao/ClassesDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/dao/CourseDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/dao/NoticeDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/dao/UserDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/AnswerSheet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/AnswerType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/Classes.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/Course.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/Notice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/Pager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/entity/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/interceptor/TokenInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/AnswerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/AnswerSheetService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/AnswerTypeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/ClassesService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/CourseService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/NoticeService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/UserService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/impl/AnswerServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/impl/AnswerSheetServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/impl/AnswerTypeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/impl/ClassesServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/impl/CourseServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/impl/NoticeServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/service/impl/UserServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/standard/Resp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/standard/ResponseData$Meta.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/standard/ResponseData.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/Answer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/AnswerSheet.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/AnswerType.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/Classes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/Course.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/Notice.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/xml/User.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -268,91 +39,63 @@
     <session id="-651683044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="2" />
-          <entry key="java" value="98" />
+          <entry key="css" value="2" />
+          <entry key="html" value="4" />
+          <entry key="java" value="100" />
+          <entry key="js" value="3" />
+          <entry key="jsp" value="1" />
           <entry key="properties" value="1" />
           <entry key="sql" value="1" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="2" />
-          <entry key="JAVA" value="98" />
+          <entry key="CSS" value="2" />
+          <entry key="HTML" value="4" />
+          <entry key="JAVA" value="100" />
+          <entry key="JSP" value="1" />
+          <entry key="JavaScript" value="3" />
           <entry key="Properties" value="1" />
           <entry key="Scratch" value="1" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="61" />
-          <entry key="txt" value="15" />
+          <entry key="html" value="51" />
+          <entry key="java" value="98" />
+          <entry key="jsp" value="9" />
+          <entry key="txt" value="25" />
+          <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="61" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="HTML" value="51" />
+          <entry key="JAVA" value="98" />
+          <entry key="JSP" value="9" />
+          <entry key="PLAIN_TEXT" value="25" />
+          <entry key="XML" value="22" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml/AnswerType.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml/AnswerSheet.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/xml/Answer.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1897">
-              <caret line="151" selection-start-line="151" selection-end-line="151" />
-              <folding>
-                <element signature="e#1570#1578#0" expanded="true" />
-                <element signature="e#1629#1640#0" expanded="true" />
-                <element signature="e#1684#1693#0" expanded="true" />
-                <element signature="e#1737#1745#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2160">
+              <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -360,38 +103,90 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="360">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#239#240#0" expanded="true" />
-                <element signature="e#263#264#0" expanded="true" />
+                <element signature="e#274#275#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1830">
-              <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
+            <state relative-caret-position="1396">
+              <caret line="1208" lean-forward="true" selection-start-line="1208" selection-end-line="1208" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="e#69792#69800#0" expanded="true" />
+                <element signature="e#69916#69924#0" expanded="true" />
+                <element signature="n#script#25;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#26;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a9017c36-4b7b-4a47-a7c4-b29bfd11c27e/console.sql">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/CourseController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1290">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1260">
+              <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
+              <folding>
+                <element signature="n#script#25;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#26;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -419,10 +214,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="Jsp File" />
+        <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>copyright</find>
+      <find>dropdown nav-item</find>
+      <find>LOGIN</find>
+      <find>Get st</find>
+      <find>pablo</find>
+      <find>blog</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -430,9 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/AnswerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/AnswerSheetDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/AnswerTypeDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/ClassesDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/CourseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/NoticeDao.java" />
@@ -476,11 +279,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/xml/AnswerType.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/xml/AnswerSheet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/indax.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/navigation.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/dashboard.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" />
       </list>
     </option>
   </component>
@@ -489,6 +295,13 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -502,10 +315,10 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="37" />
-    <option name="y" value="171" />
-    <option name="width" value="1935" />
-    <option name="height" value="947" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -513,7 +326,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -576,6 +390,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="teaching" type="b2602c69:ProjectViewProjectNode" />
+              <item name="teaching" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -591,8 +413,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -600,18 +421,27 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543127639529" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543137571432" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\3T138\ssm\teaching\src\main\webapp\static\js\plugins" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ssm.bdqn.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\3T138\ssm\teaching\src\main\webapp\static" />
+      <recent name="D:\3T138\ssm\teaching\src\main\webapp\static\css" />
+      <recent name="D:\3T138\ssm\teaching\src\main\webapp\static\js" />
+      <recent name="D:\3T138\ssm\teaching\src\main\webapp\WEB-INF\html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -711,33 +541,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543123980589</updated>
-      <workItem from="1543123986323" duration="3482000" />
+      <workItem from="1543123986323" duration="5564000" />
+      <workItem from="1543132411321" duration="4185000" />
     </task>
+    <task id="LOCAL-00001" summary="2018-11-25">
+      <created>1543127699510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1543127699511</updated>
+    </task>
+    <task id="LOCAL-00002" summary="2018-11-25">
+      <created>1543129571881</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1543129571881</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3482000" />
+    <option name="totallyTimeSpent" value="9749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Designer" />
-      <window_info id="Image Layers" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Capture Tool" />
-      <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21849866" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Application Servers" weight="0.32907802" />
-      <window_info anchor="bottom" id="Spring" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Java Enterprise" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Messages" weight="0.32907802" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -745,15 +583,23 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Database" weight="0.3297587" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32907802" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32907802" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="right" id="Database" order="6" weight="0.3297587" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -762,114 +608,15 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2018-11-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018-11-25" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/AnswerDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/AnswerSheetDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/AnswerTypeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/CourseDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/ClassesDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/NoticeDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/AnswerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#656#662#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1095#1096#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1599#1600#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/NoticeServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
           <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#226#227#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-            <element signature="e#340#341#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,9 +624,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="951">
           <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -887,17 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#248#249#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#527#528#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,9 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1001,9 +731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
           <caret line="32" column="1" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1011,14 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#567#580#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#1029#1030#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1064,16 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerSheetController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
@@ -1104,23 +813,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/CourseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/NoticeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1159,16 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#249#250#0" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#343#344#0" expanded="true" />
-            <element signature="e#391#392#0" expanded="true" />
-            <element signature="e#431#432#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,21 +995,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a9017c36-4b7b-4a47-a7c4-b29bfd11c27e/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index2.jsp" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/layui.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/js/vip_comm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/navigation.html" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/CourseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1897">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="1290">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
           <folding>
-            <element signature="e#1570#1578#0" expanded="true" />
-            <element signature="e#1629#1640#0" expanded="true" />
-            <element signature="e#1684#1693#0" expanded="true" />
-            <element signature="e#1737#1745#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a9017c36-4b7b-4a47-a7c4-b29bfd11c27e/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/AnswerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="51" column="1" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/entity/Course.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1342,28 +1053,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="61" column="7" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="2160">
+          <caret line="91" column="33" selection-start-line="91" selection-start-column="33" selection-end-line="91" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#239#240#0" expanded="true" />
-            <element signature="e#263#264#0" expanded="true" />
+            <element signature="e#274#275#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1396">
+          <caret line="1208" lean-forward="true" selection-start-line="1208" selection-end-line="1208" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#1;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#2;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#3;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#4;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#td#3;n#tr#5;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#69792#69800#0" expanded="true" />
+            <element signature="e#69916#69924#0" expanded="true" />
+            <element signature="n#script#25;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#26;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="16" column="90" selection-start-line="16" selection-start-column="90" selection-end-line="16" selection-end-column="90" />
+          <folding>
+            <element signature="n#script#25;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#26;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
