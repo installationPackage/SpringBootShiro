@@ -7,13 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e021a66c-9292-4e0f-95fb-336c0dd05135" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/static/fonts/nucleo.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/springmvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/css/nucleo-icons.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/css/nucleo-icons.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/static/js/plugins/black-dashboard.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static/js/black-dashboard.min.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,7 +35,7 @@
     <session id="-651683044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.9" value="1" />
@@ -77,7 +71,7 @@
           <entry key="html" value="142" />
           <entry key="java" value="112" />
           <entry key="jsp" value="9" />
-          <entry key="txt" value="28" />
+          <entry key="txt" value="29" />
           <entry key="xml" value="33" />
         </counts>
       </usages-collector>
@@ -86,7 +80,7 @@
           <entry key="HTML" value="142" />
           <entry key="JAVA" value="112" />
           <entry key="JSP" value="9" />
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="PLAIN_TEXT" value="29" />
           <entry key="XML" value="33" />
         </counts>
       </usages-collector>
@@ -441,7 +435,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543212031122" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543212441862" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -565,7 +559,7 @@
       <updated>1543123980589</updated>
       <workItem from="1543123986323" duration="5564000" />
       <workItem from="1543132411321" duration="4615000" />
-      <workItem from="1543208399173" duration="3938000" />
+      <workItem from="1543208399173" duration="4057000" />
     </task>
     <task id="LOCAL-00001" summary="2018-11-25">
       <created>1543127699510</created>
@@ -609,11 +603,18 @@
       <option name="project" value="LOCAL" />
       <updated>1543137982029</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="2018-11-25 4">
+      <created>1543212366594</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543212366594</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14117000" />
+    <option name="totallyTimeSpent" value="14236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -662,7 +663,8 @@
     <MESSAGE value="2018-11-25" />
     <MESSAGE value="2018-11-25 2" />
     <MESSAGE value="2018-11-25 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="2018-11-25 3" />
+    <MESSAGE value="2018-11-25 4" />
+    <option name="LAST_COMMIT_MESSAGE" value="2018-11-25 4" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ssm/bdqn/service/impl/ClassesServiceImpl.java">

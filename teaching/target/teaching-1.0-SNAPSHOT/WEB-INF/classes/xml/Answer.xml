@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.bdqn.dao.AnswerDao">
+    <resultMap id="answerMap" type="Answer">
+        <result property="id" column="id"/>
+        <result property="titleName" column="titleName"/>
+        <result property="optionA" column="optionA"/>
+        <result property="optionB" column="optionB"/>
+        <result property="optionC" column="optionC"/>
+        <result property="optionD" column="optionD"/>
+        <result property="courseTypeId" column="courseTypeId"/>
+        <result property="answerTypeId" column="answerTypeId"/>
+        <result property="result" column="result"/>
+        <result property="state" column="state"/>
+        <association property="course" javaType="Course">
+            <result property="id" column="cid"/>
+            <result property="courseName" column="courseName"/>
+        </association>
+        <association property="answertype" javaType="AnswerType">
+            <result property="id" column="atid"/>
+            <result property="typeName" column="typeName"/>
+        </association>
+    </resultMap>
+    <sql id="answerSql">
+        <if test="courseTypeId!=null and courseTypeId>0">
+            and a.courseTypeId=#{courseTypeId}
+        </if>
+        <if test="answerTypeId!=null and answerTypeId>0">
+            and a.answerTypeId=#{answerTypeId}
+        </if>
+    </sql>
+    <!--查询面试题-->
+    <!-- select a.*,at.id asid,at.typeName,c.id cid,c.courseName
+     from answer a,answerType at,course c
+     where a.courseTypeId = c.id and a.answerTypeId=at.id-->
+    <select id="queryAnswer" resultType="Answer">
+        select * from answer
+        where 1=1
+        <include refid="answerSql"/>
+    </select>
+    <!--添加题目-->
+    <insert id="addAnswer">
+        insert into answer
+        value (default,#{titleName},#{optionA},#{optionB},#{optionC},#{optionD},
+               #{answerTypeId},#{courseTypeId},#{result},#{state})
+    </insert>
+    <delete id="deleteAnswer">
+        delete from answer
+        where id=#{id}
+    </delete>
+</mapper>
