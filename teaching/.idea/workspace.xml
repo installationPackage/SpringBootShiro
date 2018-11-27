@@ -7,14 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e021a66c-9292-4e0f-95fb-336c0dd05135" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/answerList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/studentList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/succeed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/admin/teacherList.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/student/succeed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/html/teacher/succeed.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ssm/bdqn/controller/login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ssm/bdqn/controller/login.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/teaching-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/teaching-1.0-SNAPSHOT/WEB-INF/classes/com/ssm/bdqn/controller/login.class" afterDir="false" />
     </list>
@@ -44,7 +37,7 @@
     <session id="-651683044">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.9" value="1" />
@@ -414,39 +407,6 @@
               <item name="teaching" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bdqn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="teaching" type="b2602c69:ProjectViewProjectNode" />
-              <item name="teaching" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bdqn" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="teaching" type="b2602c69:ProjectViewProjectNode" />
-              <item name="teaching" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="bdqn" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="teaching" type="b2602c69:ProjectViewProjectNode" />
-              <item name="teaching" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="teaching" type="b2602c69:ProjectViewProjectNode" />
-              <item name="teaching" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -518,7 +478,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543220477232" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543220536816" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -643,7 +603,7 @@
       <workItem from="1543123986323" duration="5564000" />
       <workItem from="1543132411321" duration="4615000" />
       <workItem from="1543208399173" duration="4057000" />
-      <workItem from="1543212912393" duration="7470000" />
+      <workItem from="1543212912393" duration="7562000" />
     </task>
     <task id="LOCAL-00001" summary="2018-11-25">
       <created>1543127699510</created>
@@ -694,15 +654,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543212366594</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="2018-11-25 4">
+      <created>1543220550657</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543220550657</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21706000" />
+    <option name="totallyTimeSpent" value="21798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22386059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
