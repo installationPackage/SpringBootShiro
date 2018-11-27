@@ -24,6 +24,7 @@ public class AnswerController {
         Resp<Object> resp = new Resp<Object>();
         if(answerService.addAnswer(answer)>0){
             resp.getStatus();
+            return "第一次修改";
         }
         return JSON.toJSONString(resp);
     }
